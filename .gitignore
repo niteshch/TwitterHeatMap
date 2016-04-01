@@ -1,0 +1,5 @@
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+# Eclipse Settings.settings/# Build Filestarget/# AWS Credentials Filesrc/com/twitter/AwsCredentials.properties
