@@ -15,7 +15,8 @@ Following are the details of the application:
 Technologies Used
 -----------------
 - Spring for RESTful API
-- Java Websocket
+- Java Websockets
+- Java 8
 - Twitter4j
 - Amazon AWS SDK
 - DynamoDB
