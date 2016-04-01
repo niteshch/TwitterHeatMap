@@ -20,6 +20,7 @@ Technologies Used
 - Twitter4j
 - Amazon AWS SDK
 - DynamoDB
+- Highcharts
 
 How it works
 ------------
