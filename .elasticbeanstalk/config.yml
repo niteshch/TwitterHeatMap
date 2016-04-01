@@ -1,0 +1,12 @@
+branch-defaults:
+  default:
+    environment: TwitterStreamDev-1
+deploy:
+  artifact: ./target/TwitterStream.war
+global:
+  application_name: TwitterStream
+  default_ec2_keyname: null
+  default_platform: Java 8
+  default_region: us-east-1
+  profile: null
+  sc: null

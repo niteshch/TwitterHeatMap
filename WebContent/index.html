@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Heatmaps</title>
+<style>
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+	height: 100%;
+}
+
+#floating-panel {
+	position: absolute;
+	top: 100px;
+	z-index: 5;
+	background-color: #fff;
+	text-align: center;
+	font-family: 'Roboto', 'sans-serif';
+	line-height: 30px;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px 0 0 500px;
+    align-content: center;
+}
+</style>
+<script src="js/websocket.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANkeeBCTsJ_EW4gE43U4KW-65jp8rHLFE&signed_in=true&libraries=visualization&callback=onOpen">
+	
+</script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+
+</head>
+
+<body>
+	<div class="center">
+		<span style="font-weight:bold;font-size:large;"> Topic </span><select id="Topics">
+			<option value="None">None</option>
+			<option value="Game">Game</option>
+			<option value="Birthday">Birthday</option>
+			<option value="Weekend">Weekend</option>
+			<option value="Love">Love</option>
+			<option value="Work">Work</option>
+			<option value="Coffee">Coffee</option>
+		</select> 
+	</div>
+	<div id="floating-panel">
+		<button onclick="toggleHeatmap()">Toggle Heatmap</button>
+		<button onclick="changeGradient()">Change gradient</button>
+		<button onclick="changeRadius()">Change radius</button>
+		<button onclick="changeOpacity()">Change opacity</button>
+	</div>
+	<div id="map"></div>
+	
+	<div id="container" style="width:100%; height:100%;"></div>
+</body>
+</html>

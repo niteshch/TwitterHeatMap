@@ -1,0 +1,5 @@
+eb create TwitterStreamDev -r us-east-1 -i t2.micro -p "64bit Amazon Linux 2015.09 v2.0.4 running Node.js" --single
+
+mvn clean install
+
+eb deploy
